@@ -1,4 +1,4 @@
- //[] = lista
+
  let listaDeNumerosSorteados = []
  let numeroLimite = 10;
  let numeroSecreto = gerarNumeroAleatorio();
@@ -33,7 +33,7 @@ exibirMensagemInicial();
             }   else {
                 exibirTextoNaTela("p", "O numero secreto é maior");
             }
-            //tentativas + tentativas
+            
             tentativas++;
             limparCampo();
      }
@@ -47,10 +47,10 @@ exibirMensagemInicial();
         listaDeNumerosSorteados = [];
      }
      if (listaDeNumerosSorteados.includes(numeroEscolhido)){
-        //return = pede para retornar o valor experado
+        
         return gerarNumeroAleatorio();
      }  else {
-        //push = adiciona item ao final da lista
+        
         listaDeNumerosSorteados.push(numeroEscolhido);
         console.log(listaDeNumerosSorteados);
         return numeroEscolhido;
@@ -67,4 +67,5 @@ exibirMensagemInicial();
     tentativas = 1;
     exibirMensagemInicial();
     document.getElementById("reiniciar").setAttribute("disabled", true);
+
  }
